@@ -31,6 +31,6 @@ if [[ $REBULD_NPM_MODULES ]]; then
   fi
 fi
 
-export PORT=80
+export PORT=58080
 echo "=> Starting meteor app on port:$PORT"
 node main.js

@@ -1,10 +1,10 @@
 FROM debian:wheezy
-MAINTAINER MeteorHacks Pvt Ltd.
+MAINTAINER EtherPOS, LLC
 
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
 
 RUN bash $METEORD_DIR/init.sh
 
-EXPOSE 80
+EXPOSE 58080
 ENTRYPOINT bash $METEORD_DIR/run_app.sh
